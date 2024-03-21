@@ -125,3 +125,14 @@ exercises.c:91:27: note: ...this statement, but the latter is misleadingly inden
 cc1: all warnings being treated as errors
 Compilation failed
 605b3f4
+Thu 21 Mar 2024 08:47:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:91:17: error: comparison between pointer and integer [-Werror]
+   91 |     if(elemento == elem) pop(L);
+      |                 ^~
+cc1: all warnings being treated as errors
+Compilation failed
+a364b30
