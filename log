@@ -28,3 +28,22 @@ exercises.c:75:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 bedf11c
+Thu 21 Mar 2024 08:26:14 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:69:5: error: ‘sumatoria’ undeclared (first use in this function); did you mean ‘sumaria’?
+   69 |     sumatoria += *dato;
+      |     ^~~~~~~~~
+      |     sumaria
+exercises.c:69:5: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:64:7: error: unused variable ‘sumaria’ [-Werror=unused-variable]
+   64 |   int sumaria = 0;
+      |       ^~~~~~~
+exercises.c:75:1: error: control reaches end of non-void function [-Werror=return-type]
+   75 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+023d0b8
