@@ -344,3 +344,17 @@ Thu 21 Mar 2024 09:11:13 PM UTC:
  1 file changed, 1 insertion(+), 2 deletions(-)
  tests:  0|0
 5ed4344
+Thu 21 Mar 2024 09:11:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:117:5: error: ‘velem’ undeclared (first use in this function)
+  117 |     velem = top(pila_aux);
+      |     ^~~~~
+exercises.c:117:5: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:118:14: error: ‘elem’ undeclared (first use in this function)
+  118 |     push(P2, elem);
+      |              ^~~~
+Compilation failed
+5403a8a
