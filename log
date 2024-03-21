@@ -136,3 +136,17 @@ exercises.c:91:17: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 a364b30
+Thu 21 Mar 2024 08:47:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:91:17: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   91 |     if(elemento = elem) pop(L);
+      |                 ^
+exercises.c:91:8: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   91 |     if(elemento = elem) pop(L);
+      |        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1c1c8e0
