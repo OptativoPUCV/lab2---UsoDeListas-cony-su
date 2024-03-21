@@ -427,3 +427,14 @@ exercises.c:108:9: error: ‘elem’ undeclared (first use in this function)
 exercises.c:108:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 e2327af
+Thu 21 Mar 2024 10:05:20 PM UTC: 
+ exercises.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:112:12: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  112 |     *eleme = top(P1);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+4374207
