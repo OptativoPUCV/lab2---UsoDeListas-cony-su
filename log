@@ -416,3 +416,14 @@ exercises.c:108:10: error: implicit declaration of function ‘empty’ [-Werror
 cc1: all warnings being treated as errors
 Compilation failed
 e6c7269
+Thu 21 Mar 2024 10:03:14 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:108:9: error: ‘elem’ undeclared (first use in this function)
+  108 |   while(elem != NULL)
+      |         ^~~~
+exercises.c:108:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+e2327af

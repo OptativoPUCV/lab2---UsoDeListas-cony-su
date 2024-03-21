@@ -105,7 +105,7 @@ void copia_pila(Stack* P1, Stack* P2)
   Stack* pila_aux = create_stack();
 
 
-  while(!empty(P1))
+  while(elem != NULL)
   {
     int* elem = top(P1); 
     push(pila_aux, elem);
@@ -113,7 +113,7 @@ void copia_pila(Stack* P1, Stack* P2)
   }
 
   
-  while(!empty(pila_aux))
+  while(elem != NULL)
   {
     int* elem = top(pila_aux);
     push(P2, elem);
