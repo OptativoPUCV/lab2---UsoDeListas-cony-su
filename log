@@ -82,3 +82,26 @@ exercises.c:92:14: error: assignment to ‘int’ from ‘void *’ makes intege
 cc1: all warnings being treated as errors
 Compilation failed
 67742db
+Thu 21 Mar 2024 08:46:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:89:26: error: expected statement before ‘)’ token
+   89 |   while(elemento != NULL))
+      |                          ^
+exercises.c:91:17: error: comparison between pointer and integer [-Werror]
+   91 |     if(elemento == elem)) popCurrent(L);
+      |                 ^~
+exercises.c:91:25: error: expected statement before ‘)’ token
+   91 |     if(elemento == elem)) popCurrent(L);
+      |                         ^
+exercises.c:91:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   91 |     if(elemento == elem)) popCurrent(L);
+      |     ^~
+exercises.c:91:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   91 |     if(elemento == elem)) popCurrent(L);
+      |                           ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cd3c06f
