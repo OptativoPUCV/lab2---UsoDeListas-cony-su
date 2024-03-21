@@ -405,3 +405,14 @@ exercises.c:116:9: error: expected expression before ‘)’ token
 cc1: all warnings being treated as errors
 Compilation failed
 f4c03f4
+Thu 21 Mar 2024 10:02:27 PM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:108:10: error: implicit declaration of function ‘empty’ [-Werror=implicit-function-declaration]
+  108 |   while(!empty(P1))
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e6c7269
