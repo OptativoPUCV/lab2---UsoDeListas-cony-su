@@ -204,3 +204,21 @@ arraylist.h:32:7: note: declared here
       |       ^~~~~~~~~~
 Compilation failed
 85697dc
+Thu 21 Mar 2024 08:52:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:91:34: error: invalid type argument of unary ‘*’ (have ‘int’)
+   91 |     if(*elemento == elem) pop(L, *elem);
+      |                                  ^~~~~
+exercises.c:91:27: error: too many arguments to function ‘pop’
+   91 |     if(*elemento == elem) pop(L, *elem);
+      |                           ^~~
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:17:7: note: declared here
+   17 | void *pop(Stack *stack) { return popFront(stack); }
+      |       ^~~
+Compilation failed
+3cf3f91
