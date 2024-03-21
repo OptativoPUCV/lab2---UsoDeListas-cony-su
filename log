@@ -318,3 +318,14 @@ Thu 21 Mar 2024 09:09:54 PM UTC:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 803f8c2
+Thu 21 Mar 2024 09:10:34 PM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:110:17: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  110 |     int* elem = *(int*) first(P1);
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+b17f941
