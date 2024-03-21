@@ -88,11 +88,9 @@ void eliminaElementos(List*L, int elem)
   
   while(elemento != NULL)
   {
-    if(*elemento == elem)
-      popCurrent(L);
+    if(*elemento == elem) popCurrent(L);
     elemento = next(L); 
   }
-  
 }
 
 /*
@@ -102,7 +100,28 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2) {
+void copia_pila(Stack* P1, Stack* P2) 
+{
+  Stack* pila_aux = create_stack();
+  
+
+  while(P1 != NULL)
+  {
+    int* elem = first(P1);
+    push(pila_aux, elem);
+    pop(P1);    
+  }
+
+  while(pila_aux != NULL)
+  {
+    int* elem = first(pila_aux);
+    push(P2, elem);
+    pop(pila_aux);
+    
+  }
+
+  free(pila_aux);
+  
 }
 
 /*
@@ -112,7 +131,8 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-int parentesisBalanceados(char *cadena) {
+int parentesisBalanceados(char *cadena) 
+{
    return 0;
 }
 
