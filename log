@@ -291,3 +291,9 @@ exercises.c:92:20: error: expected ‘;’ before ‘elemento’
       |     ~~~~~~~~        
 Compilation failed
 cf08993
+Thu 21 Mar 2024 08:55:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|2
+total_score: 40/70
+257812a
