@@ -691,3 +691,14 @@ exercises.c:157:17: note: each undeclared identifier is reported only once for e
 cc1: all warnings being treated as errors
 Compilation failed
 ba5655a
+Sat 23 Mar 2024 09:39:45 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:147:10: error: implicit declaration of function ‘is_empty’ [-Werror=implicit-function-declaration]
+  147 |       if(is_empty(pila))
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+725eee9
