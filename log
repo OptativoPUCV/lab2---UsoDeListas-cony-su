@@ -623,3 +623,17 @@ exercises.c:147:10: error: implicit declaration of function ‘empty’ [-Werror
 cc1: all warnings being treated as errors
 Compilation failed
 b548052
+Sat 23 Mar 2024 09:31:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:143:18: error: expected expression before ‘char’
+  143 |       push(pila, char cadena[k]);
+      |                  ^~~~
+exercises.c:147:10: error: implicit declaration of function ‘empty’ [-Werror=implicit-function-declaration]
+  147 |       if(empty(pila))
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2a94837
