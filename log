@@ -675,3 +675,19 @@ exercises.c:157:17: note: each undeclared identifier is reported only once for e
 cc1: all warnings being treated as errors
 Compilation failed
 2e8759d
+Sat 23 Mar 2024 09:34:55 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:147:10: error: implicit declaration of function ‘is_empty’ [-Werror=implicit-function-declaration]
+  147 |       if(is_empty(pila))
+      |          ^~~~~~~~
+exercises.c:157:17: error: ‘pos’ undeclared (first use in this function); did you mean ‘pop’?
+  157 |       if(cadena[pos - k] == ')' || cadena[pos - k] == ']' || cadena[pos - k] == '}') pop(pila);
+      |                 ^~~
+      |                 pop
+exercises.c:157:17: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+ba5655a
