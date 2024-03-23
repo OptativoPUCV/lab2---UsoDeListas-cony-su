@@ -130,7 +130,7 @@ La función verifica si la cadena de entrada tiene sus
 paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
-([]) {[)]} 
+
 int parentesisBalanceados(char *cadena) 
 {
   Stack* pila = create_stack();
