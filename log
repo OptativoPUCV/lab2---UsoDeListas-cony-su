@@ -552,3 +552,17 @@ exercises.c:147:10: error: implicit declaration of function ‘empty’ [-Werror
 cc1: all warnings being treated as errors
 Compilation failed
 a238989
+Sat 23 Mar 2024 09:29:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:141:26: error: expected expression before ‘||’ token
+  141 |     if(cadena[k] == '(') || (cadena[k] == '[') || (cadena[k] == '{')
+      |                          ^~
+exercises.c:137:7: error: unused variable ‘pos’ [-Werror=unused-variable]
+  137 |   int pos = strlen(cadena) - 1;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+9379b06
