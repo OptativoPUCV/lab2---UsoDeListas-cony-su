@@ -82,7 +82,7 @@ Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
-void eliminaElementos(List*L, int elem)
+void eliminaElementos(List* L, int elem)
 {
   int* elemento = first(L);
   
@@ -113,7 +113,6 @@ void copia_pila(Stack* P1, Stack* P2)
     elem = top(P1);
   }
 
-
   elem = top(pila_aux);
   
   while(elem != NULL)
@@ -131,9 +130,38 @@ La función verifica si la cadena de entrada tiene sus
 paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
-
+([]) {[)]} 
 int parentesisBalanceados(char *cadena) 
 {
-   return 0;
+  Stack* pila = create_stack();
+  int pos = strlen(cadena) - 1;
+    
+  for(int k = 0; k < strlen(cadena); k++)
+  {
+    if(cadena[k] == '(') || (cadena[k] == '[') || (cadena[k] == '{'))
+    {
+      push(pila, cadena[k]);
+    }
+    else
+    {
+      if(pila == NULL)
+      {
+        return 0;
+      }
+      
+      if(cadena[k] == ')'|| cadena[k] == ']' || cadena[k] == '}')
+      {
+        pop(pila);
+      }
+
+      if(cadena[pos - k] == ')' || cadena[pos - k] == ']' || cadena[pos - k] == '}') pop(pila);
+        
+    }
+    
+  }
+  
+  if(top(pila) == NULL) return 1;
+  return 0;
 }
 
+  

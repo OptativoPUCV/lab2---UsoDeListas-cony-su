@@ -450,3 +450,38 @@ Thu 21 Mar 2024 10:11:36 PM UTC:
  tests:  4|1
 total_score: 50/70
 57e106d
+Sat 23 Mar 2024 09:23:24 PM UTC: 
+ exercises.c | 30 +++++++++++++++++++++++++++++-
+ 1 file changed, 29 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c:133:2: error: expected identifier or ‘(’ before ‘[’ token
+  133 | ([]) {[)]}
+      |  ^
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:141:26: error: expected expression before ‘||’ token
+  141 |     if(cadena[k] == '(') || (cadena[k] == '[') || (cadena[k] == '{'))
+      |                          ^~
+exercises.c:141:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  141 |     if(cadena[k] == '(') || (cadena[k] == '[') || (cadena[k] == '{'))
+      |     ^~
+exercises.c:141:69: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  141 |     if(cadena[k] == '(') || (cadena[k] == '[') || (cadena[k] == '{'))
+      |                                                                     ^
+exercises.c:141:69: error: expected statement before ‘)’ token
+exercises.c:143:24: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  143 |       push(pila, cadena[k]);
+      |                  ~~~~~~^~~
+      |                        |
+      |                        char
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:145:5: error: ‘else’ without a previous ‘if’
+  145 |     else
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c5680e8
